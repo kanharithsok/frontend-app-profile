@@ -1,3 +1,9 @@
+$green-color: #21472E;
+
+.container-fluid {
+  max-width: 1600px;
+}
+
 .word-break-all {
   word-break: break-all !important;
 }
@@ -9,6 +15,7 @@
     text-decoration: none;
   }
 }
+
 .btn-link {
   text-decoration: underline;
   &:hover {
@@ -16,11 +23,22 @@
   }
 }
 
+.btn-primary {
+  background-color: $green-color;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: $green-color;
+  color: white;
+}
+
 .profile-page-bg-banner {
   height: 12rem;
-  background-image: url('./assets/dot-pattern-light.png');
+  background-image: url('./assets/green-background.png');
   background-repeat: repeat-x;
-  background-size: auto 85%;
+  background-size: auto;
+  // background-color: $green-color !important;
 }
 
 .username-description {
