@@ -2,6 +2,7 @@ $green-color: #21472E;
 
 .container-fluid {
   max-width: 1600px;
+  //background-color: #21472E;
 }
 
 .word-break-all {
@@ -10,13 +11,44 @@ $green-color: #21472E;
 
 // TODO: Update edx-bootstrap theme to incorporate these edits.
 .btn, a.btn {
+ // background-color: #21472E;
+  border-radius: 0%;
   text-decoration: none;
   &:hover {
     text-decoration: none;
   }
 }
+a.nav-link {
+  color: $green-color;
+  &:hover {
+
+    background-color: $green-color !important;
+    color: white;
+  }
+
+}
+.menu-trigger {
+ // background-color: #21472E;
+  color: $green-color !important;
+  &:hover{
+
+    color: $green-color !important;
+  }
+
+}
+
+.dropdown-menu{
+  border-radius: 0%;
+ width: 288px !important;
+ padding: 10px !important;
+  // &:hover {
+  //   background-color: $green-color;
+  //   color: white;
+  // }
+}
 
 .btn-link {
+  background-color: #21472E !important;
   text-decoration: underline;
   &:hover {
     text-decoration: underline;
@@ -26,6 +58,7 @@ $green-color: #21472E;
 .btn-primary {
   background-color: $green-color;
   color: white;
+
 }
 
 .btn-primary:hover {
@@ -65,6 +98,7 @@ $green-color: #21472E;
 
 .profile-page {
   .edit-section-header {
+
     @extend .h6;
     display: block;
     font-weight: normal;
@@ -86,7 +120,8 @@ $green-color: #21472E;
   }
 
   .profile-avatar-menu-container {
-    background: rgba(0,0,0,.65);
+
+    background: $green-color;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -102,6 +137,7 @@ $green-color: #21472E;
 
     .btn {
       text-decoration: none;
+
       @include media-breakpoint-up(md) {
         margin-bottom: 1.2rem;
       }
@@ -110,6 +146,7 @@ $green-color: #21472E;
     .dropdown {
       @include media-breakpoint-up(md) {
         margin-bottom: 1.2rem;
+
       }
 
       .btn {
@@ -122,6 +159,7 @@ $green-color: #21472E;
   }
 
   .profile-avatar {
+    //background-color: #21472E;
     width: 5rem;
     height: 5rem;
     position: relative;

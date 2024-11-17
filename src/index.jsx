@@ -19,11 +19,11 @@ import ReactDOM from 'react-dom';
 import Header from '@edx/frontend-component-header';
 import FooterSlot from '@openedx/frontend-slot-footer';
 
-import messages from './i18n';
 import configureStore from './data/configureStore';
+import messages from './i18n';
 
-import './index.scss';
 import Head from './head/Head';
+import './index.scss';
 
 import AppRoutes from './routes/AppRoutes';
 
