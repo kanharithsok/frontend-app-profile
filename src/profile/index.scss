@@ -1,5 +1,10 @@
 $green-color: #21472E;
 
+@import './font/fonts';
+
+body {
+  font-family: $font-default;
+}
 .container-fluid {
   max-width: 1600px;
   //background-color: #21472E;
@@ -28,8 +33,9 @@ a.nav-link {
 
 }
 .menu-trigger {
+
  // background-color: #21472E;
-  color: $green-color !important;
+  color: black !important;
   &:hover{
 
     color: $green-color !important;
