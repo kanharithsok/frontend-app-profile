@@ -16,6 +16,9 @@ body, html, h1, h2, h3, h4, h5, h6, p, a, * {
 .word-break-all {
   word-break: break-all !important;
 }
+.btn-outline-primary:focus::before  {
+  border: 0px !important;
+}
 
 // TODO: Update edx-bootstrap theme to incorporate these edits.
 .btn, a.btn {

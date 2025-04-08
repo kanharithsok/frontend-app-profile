@@ -25,6 +25,7 @@ import messages from './i18n';
 import Head from './head/Head';
 import './index.scss';
 
+import MyFooter from './Footer/MyFooter'; // Adjust the path as needed
 import AppRoutes from './routes/AppRoutes';
 
 subscribe(APP_READY, () => {
@@ -36,6 +37,7 @@ subscribe(APP_READY, () => {
         <AppRoutes />
       </main>
       <FooterSlot />
+      <MyFooter />
     </AppProvider>,
     document.getElementById('root'),
   );
