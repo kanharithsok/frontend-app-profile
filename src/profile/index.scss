@@ -18,6 +18,7 @@ body, html, h1, h2, h3, h4, h5, h6, p, a, * {
 }
 .btn-outline-primary:focus::before  {
   border: 0px !important;
+
 }
 
 // TODO: Update edx-bootstrap theme to incorporate these edits.
@@ -48,6 +49,20 @@ a.nav-link {
     color: $green-color !important;
   }
 
+}
+.btn {
+  width: 85px !important;
+  svg {
+    background-color: $green-color !important;
+    display: none !important;
+  }
+
+  &::after {
+    content: '\25BE'; // Unicode for a smaller downward triangle
+    display: inline-block;
+    margin-left: 5px;
+   
+  }
 }
 
 .dropdown-menu{
