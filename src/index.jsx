@@ -17,7 +17,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import Header from '@edx/frontend-component-header';
-import FooterSlot from '@openedx/frontend-slot-footer';
 
 import configureStore from './data/configureStore';
 import messages from './i18n';
@@ -36,7 +35,7 @@ subscribe(APP_READY, () => {
       <main id="main">
         <AppRoutes />
       </main>
-      <FooterSlot />
+      {/* <FooterSlot /> */}
       <MyFooter />
     </AppProvider>,
     document.getElementById('root'),
