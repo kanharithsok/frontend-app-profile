@@ -6,3 +6,8 @@
 @import "~@edx/frontend-component-footer/dist/footer";
 
 @import './profile/index';
+
+.root.main {
+
+  min-height: 100vh;
+}
